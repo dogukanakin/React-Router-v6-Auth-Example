@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { UserAuth } from './context/AuthContext'
+import { UserAuth } from '../context/AuthContext'
 
 const Signin = () => {
   const [email, setEmail] = useState('')
@@ -37,7 +37,7 @@ const Signin = () => {
           <label className='py-2 font-medium'>Email Address</label>
           <input
             onChange={e => setEmail(e.target.value)}
-            className='border-2 border-gray-300 p-2 rounded-md w-full my-2'
+            className='border p-3'
             type='email'
           />
         </div>
@@ -45,7 +45,7 @@ const Signin = () => {
           <label className='py-2 font-medium'>Password</label>
           <input
             onChange={e => setPassword(e.target.value)}
-            className='border-2 border-gray-300 p-2 rounded-md w-full my-2'
+            className='border p-3'
             type='password'
           />
         </div>
