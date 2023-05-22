@@ -4,8 +4,7 @@ import {
   MobileNav,
   Typography,
   Button,
-  IconButton,
-  Card
+  IconButton
 } from '@material-tailwind/react'
 import { Link } from 'react-router-dom'
 
@@ -27,8 +26,8 @@ export default function Navbars () {
         color='blue-gray'
         className='p-1 font-normal'
       >
-        <Link to='/signup' className='flex items-center'>
-          Sign Up
+        <Link to='/Register' className='flex items-center'>
+          REgister
         </Link>
       </Typography>
       <Typography
