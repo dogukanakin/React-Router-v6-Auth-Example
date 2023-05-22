@@ -26,8 +26,8 @@ export default function Navbars () {
         color='blue-gray'
         className='p-1 font-normal'
       >
-        <Link to='/Register' className='flex items-center'>
-          REgister
+        <Link to='/signup' className='flex items-center'>
+          Register
         </Link>
       </Typography>
       <Typography
@@ -36,7 +36,7 @@ export default function Navbars () {
         color='blue-gray'
         className='p-1 font-normal'
       >
-        <Link to='/signin' className='flex items-center'>
+        <Link to='/' className='flex items-center'>
           Sign In
         </Link>
       </Typography>
@@ -55,11 +55,7 @@ export default function Navbars () {
         variant='small'
         color='blue-gray'
         className='p-1 font-normal'
-      >
-        <Link to='/dashboard' className='flex items-center'>
-          Dashboard
-        </Link>
-      </Typography>
+      ></Typography>
     </ul>
   )
 
@@ -71,18 +67,14 @@ export default function Navbars () {
             as='a'
             href='#'
             className='mr-4 cursor-pointer py-1.5 font-medium'
-          >
-            Material Tailwind
-          </Typography>
+          ></Typography>
           <div className='flex items-center gap-4'>
             <div className='mr-4 hidden lg:block'>{navList}</div>
             <Button
               variant='gradient'
               size='sm'
               className='hidden lg:inline-block'
-            >
-              <span>Buy Now</span>
-            </Button>
+            ></Button>
             <IconButton
               variant='text'
               className='ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden'

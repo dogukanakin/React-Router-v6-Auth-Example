@@ -9,6 +9,17 @@ const Signin = () => {
   const navigate = useNavigate()
   const { signIn } = UserAuth()
 
+  const handleClick = async () => {
+    //use google provider
+    try {
+      await signIn()
+      navigate('/account')
+    } catch (e) {
+      setError(e.message)
+      console.log(e.message)
+    }
+  }
+
   const handleSubmit = async e => {
     e.preventDefault()
     setError('')
@@ -27,13 +38,13 @@ const Signin = () => {
         <h1 className='text-2xl font-bold py-2'>Sign in to your account</h1>
         <p className='py-2'>
           Don't have an account yet?{' '}
-          <Link to='/signup' className='underline'>
+          <Link to='/signup' className='text-blue-500'>
             Sign up.
           </Link>
         </p>
       </div>
       <form onSubmit={handleSubmit}>
-        <div className='flex flex-col py-2'>
+        <div>
           <label className='py-2 font-medium'>Email Address</label>
           <input
             onChange={e => setEmail(e.target.value)}
@@ -41,7 +52,7 @@ const Signin = () => {
             type='email'
           />
         </div>
-        <div className='flex flex-col py-2'>
+        <div>
           <label className='py-2 font-medium'>Password</label>
           <input
             onChange={e => setPassword(e.target.value)}
@@ -53,6 +64,15 @@ const Signin = () => {
           Sign In
         </button>
       </form>
+
+      <div className='flex justify-center items-center'>
+        <button
+          onClick={handleClick}
+          className='border border-blue-500 bg-blue-600 hover:bg-blue-500 w-full p-4 my-2 text-white'
+        >
+          Sign In with Google
+        </button>
+      </div>
     </div>
   )
 }
