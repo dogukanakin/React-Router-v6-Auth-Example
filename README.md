@@ -8,9 +8,13 @@ Technologies Used
 The following technologies were used in this project:
 
 React: A JavaScript library for building user interfaces.
+
 React Router v6: A routing library for React applications.
+
 Context API: A feature in React for managing global state.
+
 Tailwind: Used for styling the components.
+
 Firebase: User for Authenticaton and registration
 
 
