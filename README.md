@@ -1,7 +1,8 @@
 # React Router v6 Auth Example
 
 This project is an example implementation of authentication using React Router v6. It demonstrates how to protect routes and provide a seamless user experience by redirecting unauthorized users to the appropriate pages.
-<img width="1439" alt="Ekran Resmi 2023-05-23 00 33 55" src="https://github.com/dogukanakin/React-Router-v6-Auth-Example/assets/101465660/9beea2cd-557d-42dd-8c0c-e50d1f5439fa">
+<img width="1439" alt="Ekran Resmi 2023-05-23 00 33 55" src="https://raw.githubusercontent.com/dogukanakin/React-Router-v6-Auth-Example/main/src/assets/Ekran%20Resmi%202023-05-23%2000.26.00.png">
+
 
 
 Technologies Used
